@@ -9,6 +9,9 @@ pipeline {
         stage('---msbuild---') {
             steps {
                 sh "msbuild HelloWorld.sln"
+            }
+        }
+    }
                 
         stage('---mstest---') {
             steps {
@@ -17,6 +20,3 @@ pipeline {
          }
         }
     }
-}
-    }
-}

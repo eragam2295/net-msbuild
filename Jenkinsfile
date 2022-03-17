@@ -13,10 +13,10 @@ pipeline {
         }
     }
     stages {
-       stage('---mstest---') {
-           steps {
-               sh "/t:RunUnitTests"           
-                
+        stage('---mstest---') {
+            steps {
+                sh "/t:RunUnitTests"           
+                 
          }
         }
     }

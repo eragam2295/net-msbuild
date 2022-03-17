@@ -11,12 +11,14 @@ pipeline {
                 sh "msbuild HelloWorld.sln"
             }
         }
-    }
-                
+        
         stage('---mstest---') {
             steps {
                 sh "/t:RunUnitTests"           
                  
          }
         }
+    }
+                
+   
     }

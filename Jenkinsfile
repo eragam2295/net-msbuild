@@ -12,10 +12,10 @@ pipeline {
             }
         }
     }
-     stages {
-        stage('---mstest---') {
-            steps {
-                sh "/t:RunUnitTests"           
+    stages {
+       stage('---mstest---') {
+           steps {
+               sh "/t:RunUnitTests"           
                 
          }
         }

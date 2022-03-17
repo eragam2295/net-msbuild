@@ -14,7 +14,7 @@ pipeline {
         
         stage('---mstest---') {
             steps {
-                sh "/t:RunUnitTests"           
+                sh "msbuild HelloWorld.csproj /t:RunUnitTests"           
                  
          }
         }
